@@ -1,7 +1,7 @@
 #include <gtest/gtest.h>
 #include <gmock/gmock.h>
 #include "cycle.h"
-#include "MyVector.h"
+#include "myVector.h"
 #include "fibonacci.h"
 
 using testing::Eq;
@@ -19,7 +19,7 @@ TEST(test_1, max){
     v.push_back(85);
     EXPECT_EQ(85,v.max());
 
-       /*
+    /*
     ticks tstart, tend;
     unsigned t;
     tstart = getticks();
