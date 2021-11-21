@@ -13,7 +13,22 @@ int FunSearchProblem::facingSun(const vector<int> & values) {
 
 // TODO
 int FunSearchProblem::squareR(int num) {
-    return 0;
+
+    int max = num;
+    int min = 1;
+    int mid = (max + min)/2;
+
+    while (max > mid)
+    {
+        int mid = (max + min)/2 ;
+
+        if (mid*mid > num)
+            max = mid;
+
+        else if (mid*mid < num)
+            min = mid;
+    }
+    return mid;
 }
 
 // TODO
