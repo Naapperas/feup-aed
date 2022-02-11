@@ -41,7 +41,7 @@ ostream& operator<<(ostream& out, const WordMean& b) {
 //TODO
 void Dictionary::readFile(ifstream &f) {
 
-    // ifstream is already opened
+    // ifstream is already open
 
     string w, m;
     while(std::getline(f, w) && std::getline(f, m)) {
@@ -61,12 +61,14 @@ string Dictionary::consult(string word1, WordMean& previous, WordMean& next) con
 
     for (auto itr = this->words.begin(); itr != this->words.end(); itr++) {
 
-        if ((*itr).getWord() == word1) return (*itr).getMeaning();
-        else if ((*itr).getWord() > word1) {
-            next = *itr;
+        auto wm = *itr;
+
+        if (wm.getWord() == word1) return wm.getMeaning();
+        else if (wm.getWord() > word1) {
+            next = wm;
             return "word not found";
         } else
-            previous = *itr; // we are always setting the previous element here, so if we reach an element after the word given, previous is already set, and we only have to car about next
+            previous = wm; // we are always setting the previous element here, so if we reach an element after the word given, previous is already set, and we only have to car about next
     }
 }
 

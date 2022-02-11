@@ -59,7 +59,7 @@ Kid Game::loseGame(string phrase) {
         auto tmp = 0;
         while (tmp++ < startIndex) ++kid;
 
-        this->kids.remove(*kid);
+        this->kids.erase(kid);
     }
 
     return this->kids.back();
@@ -67,7 +67,20 @@ Kid Game::loseGame(string phrase) {
 
 // TODO
 list<Kid> Game::removeOlder(unsigned id) {
-    return (list<Kid>());
+
+    list<Kid> result;
+
+    auto it = this->kids.begin();
+
+    while (it != this->kids.end()) {
+        if (it->getAge() > id) {
+            result.push_back(*it);
+            it = this->kids.erase(it);
+        } else
+            it++;
+    }
+
+    return result;
 }
 
 // TODO
@@ -128,10 +141,22 @@ queue<Kid> Game::rearrange() {
 
 // TODO
 bool Game::operator==(Game& g2) {
-	return true;
+	return this->kids == g2.kids;
 }
 
 // TODO
 list<Kid> Game::shuffle() const {
-	return (list<Kid>());
+    list<Kid> kids{this->kids};
+    list<Kid> l{};
+
+    while (!kids.empty()) {
+        int n = rand() % kids.size();
+        auto k{kids.begin()};
+        for (int i{0}; i < n; ++i, ++k)
+            ;
+        l.push_back(*k);
+        kids.erase(k);
+    }
+
+    return l;
 }

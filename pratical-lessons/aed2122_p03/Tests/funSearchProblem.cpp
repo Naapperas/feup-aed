@@ -4,40 +4,76 @@ FunSearchProblem::FunSearchProblem() {}
 
 //-----------------------------------------------------------------
 
-// Due to a minor inconvenience, the exercises implemented have been erased
-
 // TODO
 int FunSearchProblem::facingSun(const vector<int> & values) {
-    return 0;
+
+    if (values.empty()) return 0;
+
+    int facingSun = 1;
+
+    int currentHeight = values[0];
+
+    for (int i : values)
+        if (i > currentHeight) {
+            facingSun++;
+            currentHeight = i;
+        }
+
+    return facingSun;
 }
 
 // TODO
 int FunSearchProblem::squareR(int num) {
 
     int max = num;
-    int min = 1;
+    int min = 0;
     int mid = (max + min)/2;
 
-    while (max > mid)
-    {
-        int mid = (max + min)/2 ;
+    while (max > min) {
 
-        if (mid*mid > num)
+        if (max - min == 1) return min;
+
+        int candidate = mid*mid;
+
+        if (candidate == num)
+            return mid;
+        else if (candidate > num)
             max = mid;
-
-        else if (mid*mid < num)
+        else if (candidate < num)
             min = mid;
+
+        mid = (max + min)/2;
     }
     return mid;
 }
 
 // TODO
 int FunSearchProblem::smallestMissingValue(const vector<int> & values) {
-    return 0;
+
+    bool negs = true;
+    for (auto value : values)
+        if (value > 0) {
+            negs = false;
+            break;
+        }
+    if (negs) return 0;
+
+    vector<bool> tmp(values.size());
+    for (auto value : values)
+        if (value > 0 && value <= tmp.size())
+            tmp.at(value-1) = true;
+
+    for (int i = 0; i < tmp.size(); i++)
+        if (!tmp[i]) return i + 1;
+
+    return tmp.size() + 1;
 }
 
 // TODO
 int FunSearchProblem::minPages(const vector<int> & values, int numSt) {
+
+    if (values.size() < numSt)
+        return -1;
 
     int max = INT32_MIN, sum = 0;
 

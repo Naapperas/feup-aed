@@ -83,13 +83,8 @@ void FunSortProblem::nutsBolts(vector<Piece> &nuts, vector<Piece> &bolts) {
 
     vector<Piece> newBolts,  newNuts;
 
-    for (unsigned b = 0; b < bolts.size(); ++b) {
-
-        auto bolt = bolts[b];
-
-        for (unsigned n = 0; n < nuts.size(); ++n) {
-            auto nut = nuts[n];
-
+    for (const auto& bolt : bolts) {
+        for (const auto& nut : nuts) {
             if (nut.getDiameter() == bolt.getDiameter()) {
                 // found the nut-bolt pair
                 newBolts.push_back(bolt);
