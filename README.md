@@ -4,7 +4,7 @@ Exercises from the AED course unit at FEUP.
 
 ## Folder structure
 
-* **{exercise}**: Files related to exercise `exercise`
+* **pratical-lessons/aed2122_p{exercise}**: Files related to exercise `exercise`
 
 ## Disclaimer
 
