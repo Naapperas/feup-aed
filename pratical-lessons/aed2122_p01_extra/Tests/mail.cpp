@@ -24,7 +24,6 @@ GreenMail::GreenMail(string send, string rec, string zcode, string t):
 
 //--------
 
-// TODO
 unsigned int RegularMail::getPrice() const {
 
     if (this->weight <= 20) return 50;

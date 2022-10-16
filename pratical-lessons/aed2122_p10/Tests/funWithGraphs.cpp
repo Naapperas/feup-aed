@@ -92,7 +92,6 @@ Graph FunWithGraphs::graph4() {
 
 // ..............................
 // a) Um pequeno jogo
-// TODO
 
 int digitSum(int i) {
     int sum = 0;

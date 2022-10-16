@@ -460,8 +460,6 @@ bool iteratorBST<Comparable>::operator!= (const iteratorBST<Comparable>& it2) co
 
 //--------------------------------------------------------
 
-//TODO
-template <class Comparable>
 int BST<Comparable>::size(const Comparable& el) const {
 
     auto elem = this->find(el, this->root);

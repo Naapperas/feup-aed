@@ -32,7 +32,7 @@ BinaryTree<Circle>& Game::getGame() {
 
 //-----------------------------------------------------------------
 
-//TODO
+
 Game::Game(int height, vector<int>& points, vector<bool>& states) {
 
     vector<BinaryTree<Circle>*> nodes(points.size(), NULL);
@@ -47,7 +47,7 @@ Game::Game(int height, vector<int>& points, vector<bool>& states) {
     this->game = *(nodes.at(0));
 }
 
-//TODO
+
 int Game::play() {
 
     auto node = this->game.root;
@@ -71,7 +71,7 @@ int Game::play() {
 	return score;
 }
 
-//TODO
+
 int Game::mostVisited() const {
 
     int max = INT32_MIN;

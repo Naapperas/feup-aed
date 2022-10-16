@@ -40,7 +40,6 @@ vector<T> MyVector<T>::getValues() const {
 
 //---------------------------------
 
-// TODO
 template <class T>
 T MyVector<T>::max() const {
     if (this->values.size() == 0) throw EmptyVector();
@@ -54,7 +53,6 @@ T MyVector<T>::max() const {
 	return vmax;
 }
 
-// TODO
 template<class T>
 bool MyVector<T>::hasDuplicates() const {
 
@@ -70,7 +68,6 @@ bool MyVector<T>::hasDuplicates() const {
 	return false;
 }
 
-// TODO
 template<class T>
 void MyVector<T>::removeDuplicates() {
 

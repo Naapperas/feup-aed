@@ -15,19 +15,19 @@ public:
 	T& findMin();
 };
 
-//TODO
+
 template <class T> 
 bool StackExt<T>::empty() const {
 	return values.empty();
 }
 
-//TODO
+
 template <class T> 
 T& StackExt<T>::top() {
     return values.top();
 }
 
-//TODO
+
 template <class T> 
 void StackExt<T>::pop() {
 
@@ -37,7 +37,7 @@ void StackExt<T>::pop() {
 	values.pop();
 }
 
-//TODO
+
 template <class T> 
 void StackExt<T>::push(const T& val) {
 	values.push(val);
@@ -49,7 +49,7 @@ void StackExt<T>::push(const T& val) {
 			minimums.push(val);
 }
 
-//TODO
+
 template <class T> 
 T& StackExt<T>::findMin() {
     return minimums.top();

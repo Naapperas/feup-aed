@@ -519,7 +519,7 @@ int BST<Comparable>::nodeHeight(BinaryNode<Comparable>* node) const {
 
 // ..............................
 // a) Desequilibrio de um no
-// TODO
+
 template <class Comparable>
 int BST<Comparable>::balance(const Comparable& x) const {
 
@@ -535,7 +535,7 @@ int BST<Comparable>::balance(const Comparable& x) const {
 
 // ..............................
 // b) E uma arvore AVL?
-// TODO
+
 template <class Comparable>
 bool BST<Comparable>::isAVL() const {
   for (auto itr = this->begin(); itr != this->end(); itr++)
@@ -546,7 +546,7 @@ bool BST<Comparable>::isAVL() const {
 
 // ..............................
 // c) Rotação a direita
-// TODO
+
 template <class Comparable>
 void BST<Comparable>::rightRotate(const Comparable& x) {
     

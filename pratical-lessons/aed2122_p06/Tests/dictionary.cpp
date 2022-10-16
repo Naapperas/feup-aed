@@ -38,7 +38,7 @@ ostream& operator<<(ostream& out, const WordMean& b) {
 
 // ---------------------------------------------
 
-//TODO
+
 void Dictionary::readFile(ifstream &f) {
 
     // ifstream is already open
@@ -56,7 +56,7 @@ void Dictionary::readFile(ifstream &f) {
     }
 }
 
-//TODO
+
 string Dictionary::consult(string word1, WordMean& previous, WordMean& next) const {
 
     for (auto itr = this->words.begin(); itr != this->words.end(); itr++) {
@@ -72,7 +72,7 @@ string Dictionary::consult(string word1, WordMean& previous, WordMean& next) con
     }
 }
 
-//TODO
+
 bool Dictionary::update(string word1, string mean1) {
 
     for (auto itr = this->words.begin(); itr != this->words.end(); itr++) {
@@ -89,7 +89,7 @@ bool Dictionary::update(string word1, string mean1) {
     return false;
 }
 
-//TODO
+
 void Dictionary::print() const {
     this->words.printTree();
 }

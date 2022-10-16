@@ -6,7 +6,6 @@ FunSortProblem::FunSortProblem() {}
 
 //-----------------------------------------------------------------
 
-// TODO
 void FunSortProblem::expressLane(vector<Product> &products, unsigned k) {
 
     std::sort(products.begin(), products.end(), [&](const Product& a, const Product& b){
@@ -24,7 +23,6 @@ void FunSortProblem::expressLane(vector<Product> &products, unsigned k) {
     // O(n*log(n) + n)
 }
 
-// TODO
 int FunSortProblem::minDifference(const vector<unsigned> &values, unsigned nc) {
 
     if (nc > values.size()) return -1;
@@ -46,7 +44,6 @@ int FunSortProblem::minDifference(const vector<unsigned> &values, unsigned nc) {
 }
 
 
-// TODO
 unsigned FunSortProblem::minPlatforms (const vector<float> &arrival, const vector<float> &departure) {
 
     if (arrival.size() != departure.size()) return -1;
@@ -76,8 +73,6 @@ unsigned FunSortProblem::minPlatforms (const vector<float> &arrival, const vecto
     return maxTrains;
 }
 
-
-// TODO
 
 void FunSortProblem::nutsBolts(vector<Piece> &nuts, vector<Piece> &bolts) {
 

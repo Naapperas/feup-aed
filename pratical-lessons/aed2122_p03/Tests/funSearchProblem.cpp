@@ -4,7 +4,6 @@ FunSearchProblem::FunSearchProblem() {}
 
 //-----------------------------------------------------------------
 
-// TODO
 int FunSearchProblem::facingSun(const vector<int> & values) {
 
     if (values.empty()) return 0;
@@ -22,7 +21,6 @@ int FunSearchProblem::facingSun(const vector<int> & values) {
     return facingSun;
 }
 
-// TODO
 int FunSearchProblem::squareR(int num) {
 
     int max = num;
@@ -47,7 +45,6 @@ int FunSearchProblem::squareR(int num) {
     return mid;
 }
 
-// TODO
 int FunSearchProblem::smallestMissingValue(const vector<int> & values) {
 
     bool negs = true;
@@ -69,7 +66,6 @@ int FunSearchProblem::smallestMissingValue(const vector<int> & values) {
     return tmp.size() + 1;
 }
 
-// TODO
 int FunSearchProblem::minPages(const vector<int> & values, int numSt) {
 
     if (values.size() < numSt)

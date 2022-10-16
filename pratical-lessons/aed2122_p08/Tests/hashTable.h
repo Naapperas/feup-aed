@@ -89,7 +89,7 @@ bool HashTable<KeyType>::contains(const KeyType& k) {
 
 // ..............................
 // a) Inserindo elementos
-// TODO
+
 template <class KeyType>
 bool HashTable<KeyType>::insert(const KeyType& k) {
 
@@ -107,7 +107,7 @@ bool HashTable<KeyType>::insert(const KeyType& k) {
 
 // ..............................
 // b) Removendo elementos
-// TODO
+
 template <class KeyType>
 bool HashTable<KeyType>::remove(const KeyType& k) {
 
@@ -123,7 +123,7 @@ bool HashTable<KeyType>::remove(const KeyType& k) {
 
 // ..............................
 // c) Refazendo a tabela
-// TODO
+
 template <class KeyType>
 bool HashTable<KeyType>::rehash(int n) {
 

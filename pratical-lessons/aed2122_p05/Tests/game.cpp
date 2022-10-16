@@ -28,22 +28,18 @@ Game::Game(list<Kid>& l2) {
 
 //-----------------------------------------------------------------
 
-// TODO
 void Game::addKid(const Kid k1) {
     this->kids.push_back(k1);
 }
 
-// TODO
 list<Kid> Game::getKids() const {
     return this->kids;
 }
 
-// TODO
 void Game::setKids(const list<Kid>& l1) {
     this->kids = l1;
 }
 
-// TODO
 Kid Game::loseGame(string phrase) {
 
     auto numWords = Game::numberOfWords(phrase) - 1;
@@ -65,7 +61,6 @@ Kid Game::loseGame(string phrase) {
     return this->kids.back();
 }
 
-// TODO
 list<Kid> Game::removeOlder(unsigned id) {
 
     list<Kid> result;
@@ -83,7 +78,6 @@ list<Kid> Game::removeOlder(unsigned id) {
     return result;
 }
 
-// TODO
 queue<Kid> Game::rearrange() {
 
     list<Kid> male, female;
@@ -139,12 +133,10 @@ queue<Kid> Game::rearrange() {
     return ret;
 }
 
-// TODO
 bool Game::operator==(Game& g2) {
 	return this->kids == g2.kids;
 }
 
-// TODO
 list<Kid> Game::shuffle() const {
     list<Kid> kids{this->kids};
     list<Kid> l{};

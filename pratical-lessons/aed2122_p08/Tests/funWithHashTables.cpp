@@ -27,7 +27,7 @@ unsigned FunWithHashTables::hashString(const string &s)
 
 // ..............................
 // d) Contando diferentes somas de pares
-// TODO
+
 int FunWithHashTables::sumPairs(const vector<int> &numbers)
 {
 
@@ -43,7 +43,7 @@ int FunWithHashTables::sumPairs(const vector<int> &numbers)
 // ----------------------------------------------------------
 // Exercicio 2: Um padrão no DNA
 // ----------------------------------------------------------
-// TODO
+
 int FunWithHashTables::dnaMotifs(string dna, int k, unordered_set<string> &motifs)
 {
 
@@ -87,7 +87,7 @@ vector<string> split(string &text)
 // ----------------------------------------------------------
 // Exercicio 3: Torre de Babel
 // ----------------------------------------------------------
-// TODO
+
 void FunWithHashTables::findLanguage(string text, const unordered_map<string, vector<string>> &dict, unordered_map<string, int> &answer)
 {
 
@@ -107,7 +107,7 @@ void FunWithHashTables::findLanguage(string text, const unordered_map<string, ve
 // ----------------------------------------------------------
 // Exercicio 4: Palavras Alienígenas
 // ----------------------------------------------------------
-// TODO
+
 void FunWithHashTables::wordIndex(const vector<string> &words, vector<int> &answer)
 {
 

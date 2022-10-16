@@ -68,7 +68,7 @@ int Graph::bfs(int v) {
 
 // ..............................
 // a) Contando diferentes somas de pares
-// TODO
+
 int Graph::outDegree(int v) {
     return (!(1 <= v && v < this->nodes.size())) ? -1 : this->nodes.at(v).adj.size();
 }
@@ -79,7 +79,7 @@ int Graph::outDegree(int v) {
 
 // ..............................
 // a) Contando componentes conexos
-// TODO
+
 int Graph::connectedComponents() {
 
     int counter = 0;
@@ -95,7 +95,7 @@ int Graph::connectedComponents() {
 
 // ..............................
 // b) Componente gigante
-// TODO
+
 int Graph::giantComponent() {
 
     int biggestSize = -1;
@@ -114,7 +114,7 @@ int Graph::giantComponent() {
 // ----------------------------------------------------------
 // Exercicio 3: Ordenacao topologica
 // ----------------------------------------------------------
-// TODO
+
 list<int> Graph::topologicalSorting() {
     list<int> order;
     order.clear();
@@ -135,7 +135,7 @@ list<int> Graph::topologicalSorting() {
 
 // ..............................
 // a) Distancia entre dois nos
-// TODO
+
 int Graph::distance(int a, int b) {
 
     if (a == b) return 0;
@@ -147,7 +147,7 @@ int Graph::distance(int a, int b) {
 
 // ..............................
 // b) Diametro
-// TODO
+
 int Graph::diameter() {
 
     if (this->connectedComponents() > 1) return -1;
@@ -180,7 +180,7 @@ bool Graph::cycleDFS(int v) {
 // ----------------------------------------------------------
 // Exercicio 5: To or not be… a DAG!
 // ----------------------------------------------------------
-// TODO
+
 bool Graph::hasCycle() {
 
     bool hasCycle = false;

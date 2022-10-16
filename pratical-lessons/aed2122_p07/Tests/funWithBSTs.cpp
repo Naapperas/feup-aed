@@ -10,7 +10,7 @@
 // ----------------------------------------------------------
 // Exercicio 1: Colecao de Cromos
 // ----------------------------------------------------------
-// TODO
+
 int FunWithBSTs::newBag(const vector<int>& collection, const vector<int>& bag) {
 
   int result = 0;
@@ -33,7 +33,7 @@ int FunWithBSTs::newBag(const vector<int>& collection, const vector<int>& bag) {
 // ----------------------------------------------------------
 // Exercicio 2: Batalha de Pokemons
 // ----------------------------------------------------------
-// TODO
+
 int FunWithBSTs::battle(const vector<int>& alice, const vector<int>& bruno) {
 
   // not possible with BST class since it removes duplicates
@@ -74,14 +74,14 @@ int FunWithBSTs::battle(const vector<int>& alice, const vector<int>& bruno) {
 
 // ..............................
 // a) Contando Filmes
-// TODO
+
 int FunWithBSTs::numberMovies(const vector<pair<string, int>>& reviews) {
   return map<string, int>(reviews.begin(), reviews.end()).size();
 }
 
 // ..............................
 // b) O filme com mais reviews
-// TODO
+
 void FunWithBSTs::moreReviews(const vector<pair<string, int>>& reviews, int& m, int& n) {
 
   map<string, int> rev;
@@ -105,7 +105,7 @@ void FunWithBSTs::moreReviews(const vector<pair<string, int>>& reviews, int& m, 
 
 // ..............................
 // c) Os melhores filmes
-// TODO
+
 vector<string> FunWithBSTs::topMovies(const vector<pair<string, int>>& reviews, double k) {
   vector<string> answer;
 

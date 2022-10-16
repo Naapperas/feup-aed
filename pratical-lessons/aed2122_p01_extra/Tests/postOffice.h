@@ -25,8 +25,6 @@ public:
 	Postman addMailToPostman(Mail *m, string name);
 };
 
-
-// TODO
 class NoPostmanException
 {
     string postmanName;

@@ -23,7 +23,7 @@ bool Graph::Edge::operator<(const Edge& e) const {
 // ----------------------------------------------------------
 // Exercicio 3: Algoritmo de Prim
 // ----------------------------------------------------------
-// TODO
+
 int Graph::prim(int r) {
 
     MinHeap<int, int> primHeap(this->n, -1);
@@ -67,7 +67,7 @@ bool operator<(const pair<int, Graph::Edge> a, const pair<int, Graph::Edge>& b) 
 // ----------------------------------------------------------
 // Exercicio 5: Algoritmo de Kruskal
 // ----------------------------------------------------------
-// TODO
+
 int Graph::kruskal() {
 
     DisjointSets<int> forest;
